@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupByFieldsAndTime", "Gro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoClick", "AutoClick\AutoClick.csproj", "{E3482B6C-02A3-456E-847A-10F6E96EC0F9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{9975A4A2-CB1C-4833-AD09-8327E640CAF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C32C6309-8F22-4955-AAFB-6B732BEA64A9}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\Sync-Gitee.yml = .github\workflows\Sync-Gitee.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +31,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C32C6309-8F22-4955-AAFB-6B732BEA64A9} = {9975A4A2-CB1C-4833-AD09-8327E640CAF8}
 	EndGlobalSection
 EndGlobal
