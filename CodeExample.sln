@@ -23,6 +23,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".docs", ".docs", "{6C249F7C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeTest", "DateTimeTest\DateTimeTest.csproj", "{2A846A3D-D83F-4B8B-AD9B-670B466F7F2D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gRPC", "gRPC", "{1BC85F87-E7AD-472C-A7D1-05B1E76012A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeter", "gRPC\GrpcGreeter\GrpcGreeter.csproj", "{91B5C1EB-2A11-484B-89BB-8D96812E4040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeterClient", "gRPC\GrpcGreeterClient\GrpcGreeterClient.csproj", "{640BF20C-AD6E-4B37-B8BB-6E2448882563}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,11 +51,21 @@ Global
 		{2A846A3D-D83F-4B8B-AD9B-670B466F7F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A846A3D-D83F-4B8B-AD9B-670B466F7F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A846A3D-D83F-4B8B-AD9B-670B466F7F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B5C1EB-2A11-484B-89BB-8D96812E4040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B5C1EB-2A11-484B-89BB-8D96812E4040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B5C1EB-2A11-484B-89BB-8D96812E4040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B5C1EB-2A11-484B-89BB-8D96812E4040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640BF20C-AD6E-4B37-B8BB-6E2448882563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640BF20C-AD6E-4B37-B8BB-6E2448882563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640BF20C-AD6E-4B37-B8BB-6E2448882563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640BF20C-AD6E-4B37-B8BB-6E2448882563}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C32C6309-8F22-4955-AAFB-6B732BEA64A9} = {9975A4A2-CB1C-4833-AD09-8327E640CAF8}
+		{91B5C1EB-2A11-484B-89BB-8D96812E4040} = {1BC85F87-E7AD-472C-A7D1-05B1E76012A4}
+		{640BF20C-AD6E-4B37-B8BB-6E2448882563} = {1BC85F87-E7AD-472C-A7D1-05B1E76012A4}
 	EndGlobalSection
 EndGlobal
