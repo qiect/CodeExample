@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeter", "gRPC\GrpcGre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeterClient", "gRPC\GrpcGreeterClient\GrpcGreeterClient.csproj", "{640BF20C-AD6E-4B37-B8BB-6E2448882563}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chet.Helper", "Chet.Helper\Chet.Helper.csproj", "{BF2ACB8C-3A33-4C81-B987-C2C60F8FAC25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{640BF20C-AD6E-4B37-B8BB-6E2448882563}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{640BF20C-AD6E-4B37-B8BB-6E2448882563}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{640BF20C-AD6E-4B37-B8BB-6E2448882563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2ACB8C-3A33-4C81-B987-C2C60F8FAC25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2ACB8C-3A33-4C81-B987-C2C60F8FAC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2ACB8C-3A33-4C81-B987-C2C60F8FAC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2ACB8C-3A33-4C81-B987-C2C60F8FAC25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
