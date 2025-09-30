@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11018.127
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupByFieldsAndTime", "GroupByFieldsAndTime\GroupByFieldsAndTime.csproj", "{1DC1553D-1214-408D-9AA1-23C97A14FAA4}"
 EndProject
@@ -32,6 +32,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chet.Helper", "Chet.Helper\Chet.Helper.csproj", "{BF2ACB8C-3A33-4C81-B987-C2C60F8FAC25}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chet.Helper.Test", "Chet.Helper.Test\Chet.Helper.Test.csproj", "{8E2EA9A9-525B-4A0E-B2BB-31CD7F45D2A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helper", "Helper", "{7D2AD254-82DF-4BBF-A732-F6EB85B75574}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utility", "Utility", "{617CC29C-928B-4EC4-8794-BF54C738DB87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chet.Utils", "Utility\Chet.Utils\Chet.Utils.csproj", "{4D9325FE-5589-4285-9E60-9884BD6753CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chet.Utils.Tests", "Utility\Chet.Utils.Test\Chet.Utils.Tests.csproj", "{38B77AA3-C6D8-4985-BB89-84B01B08631A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +79,14 @@ Global
 		{8E2EA9A9-525B-4A0E-B2BB-31CD7F45D2A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E2EA9A9-525B-4A0E-B2BB-31CD7F45D2A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E2EA9A9-525B-4A0E-B2BB-31CD7F45D2A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9325FE-5589-4285-9E60-9884BD6753CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9325FE-5589-4285-9E60-9884BD6753CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9325FE-5589-4285-9E60-9884BD6753CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9325FE-5589-4285-9E60-9884BD6753CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B77AA3-C6D8-4985-BB89-84B01B08631A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B77AA3-C6D8-4985-BB89-84B01B08631A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B77AA3-C6D8-4985-BB89-84B01B08631A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B77AA3-C6D8-4985-BB89-84B01B08631A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,5 +95,12 @@ Global
 		{C32C6309-8F22-4955-AAFB-6B732BEA64A9} = {9975A4A2-CB1C-4833-AD09-8327E640CAF8}
 		{91B5C1EB-2A11-484B-89BB-8D96812E4040} = {1BC85F87-E7AD-472C-A7D1-05B1E76012A4}
 		{640BF20C-AD6E-4B37-B8BB-6E2448882563} = {1BC85F87-E7AD-472C-A7D1-05B1E76012A4}
+		{BF2ACB8C-3A33-4C81-B987-C2C60F8FAC25} = {7D2AD254-82DF-4BBF-A732-F6EB85B75574}
+		{8E2EA9A9-525B-4A0E-B2BB-31CD7F45D2A6} = {7D2AD254-82DF-4BBF-A732-F6EB85B75574}
+		{4D9325FE-5589-4285-9E60-9884BD6753CE} = {617CC29C-928B-4EC4-8794-BF54C738DB87}
+		{38B77AA3-C6D8-4985-BB89-84B01B08631A} = {617CC29C-928B-4EC4-8794-BF54C738DB87}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FDE8DE9-DBF0-4C41-96EF-A91DA6AA6591}
 	EndGlobalSection
 EndGlobal
