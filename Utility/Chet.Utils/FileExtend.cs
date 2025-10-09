@@ -1,7 +1,7 @@
 ﻿namespace Chet.Utils
 {
     /// <summary>
-    /// 文件操作扩展方法类，提供常用的读写、判断、信息获取、操作等功能。
+    /// File 扩展方法类，提供常用的读写、判断、信息获取、操作等功能。
     /// </summary>
     public static class FileExtend
     {

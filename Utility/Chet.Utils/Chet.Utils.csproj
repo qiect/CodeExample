@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>a c# utility library. C#工具包。常用扩展方法，包含bool、string、int、float、double、decimal、enum、DataTable、DateTime、File、Stream、File</Title>
+    <Authors>Chet</Authors>
   </PropertyGroup>
 
 </Project>

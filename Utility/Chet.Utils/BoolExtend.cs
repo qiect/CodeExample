@@ -1,7 +1,7 @@
 ﻿namespace Chet.Utils
 {
     /// <summary>
-    /// Bool 扩展方法类，提供常用的判断、转换、格式化、运算等功能。
+    /// bool 扩展方法类，提供常用的判断、转换、格式化、运算等功能。
     /// </summary>
     public static class BoolExtend
     {

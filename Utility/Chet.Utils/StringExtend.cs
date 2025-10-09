@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 namespace Chet.Utils
 {
     /// <summary>
-    /// String 扩展方法类，提供常用的判断、正则表达式验证、类型转换和字符串操作方法。
+    /// string 扩展方法类，提供常用的判断、正则表达式验证、类型转换和字符串操作方法。
     /// </summary>          
     public static class StringExtend
     {
