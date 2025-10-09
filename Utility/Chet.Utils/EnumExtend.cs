@@ -126,8 +126,18 @@ namespace Chet.Utils
         /// <param name="defaultValue">转换失败时的默认值。</param>
         public static TEnum ToEnum<TEnum>(this long value, TEnum defaultValue = default) where TEnum : Enum
         {
-            if (Enum.IsDefined(typeof(TEnum), value))
-                return (TEnum)Enum.ToObject(typeof(TEnum), value);
+            var underlyingType = Enum.GetUnderlyingType(typeof(TEnum));
+            object convertedValue;
+            try
+            {
+                convertedValue = Convert.ChangeType(value, underlyingType);
+            }
+            catch
+            {
+                return defaultValue;
+            }
+            if (Enum.IsDefined(typeof(TEnum), convertedValue))
+                return (TEnum)Enum.ToObject(typeof(TEnum), convertedValue);
             return defaultValue;
         }
 

@@ -99,7 +99,6 @@ namespace Chet.Utils
         /// <param name="value">待处理的 decimal。</param>
         public static string ToChineseUpper(this decimal value)
         {
-            // 仅支持整数和两位小数
             string[] cnNums = { "零", "壹", "贰", "叁", "肆", "伍", "陆", "柒", "捌", "玖" };
             string[] cnIntRadice = { "", "拾", "佰", "仟" };
             string[] cnIntUnits = { "", "万", "亿", "兆" };
@@ -114,39 +113,59 @@ namespace Chet.Utils
             long integerPart = (long)Math.Floor(value);
             int decimalPart = (int)((value - integerPart) * 100);
 
+            // 整数部分分组，每4位一组
+            string intStr = integerPart.ToString();
+            int intLen = intStr.Length;
+            int groupCount = (intLen + 3) / 4;
             string result = "";
-            // 整数部分
-            if (integerPart > 0)
+            bool needZero = false; // 是否需要补零
+            for (int g = 0; g < groupCount; g++)
             {
-                string intStr = integerPart.ToString();
-                int length = intStr.Length;
-                bool zeroFlag = false;
-                for (int i = 0; i < length; i++)
+                int groupStart = intLen - (g + 1) * 4;
+                int groupLen = groupStart < 0 ? 4 + groupStart : 4;
+                groupStart = Math.Max(0, groupStart);
+                string group = intStr.Substring(groupStart, groupLen);
+                int groupInt = int.Parse(group);
+                string groupResult = "";
+                bool localZero = false;
+                for (int i = 0; i < group.Length; i++)
                 {
-                    int n = intStr[i] - '0';
-                    int p = length - i - 1;
-                    int unitPos = p / 4;
-                    int radicePos = p % 4;
+                    int n = group[i] - '0';
+                    int p = group.Length - i - 1;
                     if (n == 0)
                     {
-                        if (!zeroFlag)
-                        {
-                            result += cnNums[0];
-                            zeroFlag = true;
-                        }
-                        if (radicePos == 0 && unitPos > 0)
-                            result += cnIntUnits[unitPos];
+                        localZero = true;
                     }
                     else
                     {
-                        result += cnNums[n] + cnIntRadice[radicePos];
-                        if (radicePos == 0 && unitPos > 0)
-                            result += cnIntUnits[unitPos];
-                        zeroFlag = false;
+                        if (localZero || (needZero && groupResult.Length > 0))
+                        {
+                            groupResult += cnNums[0];
+                        }
+                        groupResult += cnNums[n] + cnIntRadice[p];
+                        localZero = false;
                     }
                 }
-                result += cnIntLast;
+                if (groupInt != 0)
+                {
+                    groupResult += cnIntUnits[g];
+                    result = groupResult + result;
+                    needZero = true;
+                }
+                else
+                {
+                    // 只有后面有非零组才补零
+                    if (result.Length > 0 && !result.StartsWith(cnNums[0]))
+                        result = cnNums[0] + result;
+                    needZero = false;
+                }
             }
+            // 清理多余零
+            while (result.Contains("零零")) result = result.Replace("零零", "零");
+            result = result.TrimEnd('零');
+            if (result == "") result = cnNums[0];
+            result += cnIntLast;
+
             // 小数部分
             if (decimalPart > 0)
             {
@@ -159,8 +178,8 @@ namespace Chet.Utils
             {
                 result += cnInteger;
             }
-            // 处理连续零
-            result = result.Replace("零零", "零").Replace("零元", "元").Replace("零角", "").Replace("零分", "");
+            // 处理零元
+            result = result.Replace("零元", "元");
             if (result.StartsWith("零")) result = result.Substring(1);
             return result;
         }
