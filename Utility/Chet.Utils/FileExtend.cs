@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-
-namespace Chet.Utils
+﻿namespace Chet.Utils
 {
     /// <summary>
     /// 文件操作扩展方法类，提供常用的读写、判断、信息获取、操作等功能。
@@ -229,7 +225,7 @@ namespace Chet.Utils
                 var attr = File.GetAttributes(filePath);
                 File.SetAttributes(filePath, attr & ~FileAttributes.Hidden);
             }
-        } 
+        }
         #endregion
 
         #region Path 扩展方法，提供常用的路径处理、判断、组合、分解等功能。
