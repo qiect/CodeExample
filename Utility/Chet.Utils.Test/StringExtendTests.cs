@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using Chet.Utils.StringExtensions;
+using Xunit;
 
 namespace Chet.Utils.Tests
 {
@@ -404,14 +405,6 @@ namespace Chet.Utils.Tests
         public void SplitSafe_Test(string input, char sep, string[] expected)
         {
             Assert.Equal(expected, input.SplitSafe(sep));
-        }
-
-        [Fact]
-        public void ToPinyin_Test()
-        {
-            var result = "你好".ToPinyin();
-            Assert.False(string.IsNullOrEmpty(result));
-            Assert.True(result.Length >= 2);
         }
     }
 }

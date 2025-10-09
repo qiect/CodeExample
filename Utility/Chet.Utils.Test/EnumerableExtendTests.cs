@@ -1,9 +1,5 @@
-﻿using Xunit;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Collections.Concurrent;
+﻿using Chet.Utils.EnumerableExtensions;
+using Xunit;
 
 namespace Chet.Utils.Tests
 {

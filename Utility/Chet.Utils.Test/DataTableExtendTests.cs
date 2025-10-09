@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Chet.Utils.DataTableExtensions;
 using System.Data;
-using System.Linq;
 using Xunit;
-using Chet.Utils;
 
 namespace Chet.Utils.Tests
 {

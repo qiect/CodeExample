@@ -1,7 +1,5 @@
-﻿using System;
-using System.Globalization;
+﻿using Chet.Utils.DoubleExtensions;
 using Xunit;
-using Chet.Utils;
 
 namespace Chet.Utils.Tests
 {

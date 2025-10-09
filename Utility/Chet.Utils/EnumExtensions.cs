@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel;
 
-namespace Chet.Utils
+namespace Chet.Utils.EnumExtensions
 {
     /// <summary>
     /// Enum 扩展方法类，提供常用的判断、转换、描述、枚举值操作等功能。
     /// </summary>
-    public static class EnumExtend
+    public static class EnumExtensions
     {
         /// <summary>
         /// 判断枚举值是否定义在枚举类型中。

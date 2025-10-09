@@ -1,9 +1,9 @@
-﻿namespace Chet.Utils
+﻿namespace Chet.Utils.FileExtensions
 {
     /// <summary>
     /// File 扩展方法类，提供常用的读写、判断、信息获取、操作等功能。
     /// </summary>
-    public static class FileExtend
+    public static class FileExtensions
     {
         #region File 扩展方法，提供常用的读写、判断、信息获取、操作等功能。
         /// <summary>

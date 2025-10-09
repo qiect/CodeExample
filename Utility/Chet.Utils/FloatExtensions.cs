@@ -1,11 +1,11 @@
 ﻿using System.Globalization;
 
-namespace Chet.Utils
+namespace Chet.Utils.FloatExtensions
 {
     /// <summary>
     /// float 扩展方法类，提供常用的判断、转换、运算、格式化等功能。
     /// </summary>
-    public static class FloatExtend
+    public static class FloatExtensions
     {
         /// <summary>
         /// 判断 float 是否为零。

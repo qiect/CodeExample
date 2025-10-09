@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using Chet.Utils.DateTimeExtensions;
+using Xunit;
 
 namespace Chet.Utils.Tests
 {

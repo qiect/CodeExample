@@ -1,11 +1,11 @@
 ﻿using System.Text;
 
-namespace Chet.Utils
+namespace Chet.Utils.StreamExtensions
 {
     /// <summary>
     /// Stream 扩展方法类，提供常用的读取、写入、转换、判断、操作等功能。
     /// </summary>
-    public static class StreamExtend
+    public static class StreamExtensions
     {
         /// <summary>
         /// 判断流是否可读。

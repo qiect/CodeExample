@@ -1,11 +1,11 @@
 ﻿using System.Globalization;
 
-namespace Chet.Utils
+namespace Chet.Utils.DecimalExtensions
 {
     /// <summary>
     /// decimal 扩展方法类，提供常用的判断、转换、运算、格式化等功能。
     /// </summary>
-    public static class DecimalExtend
+    public static class DecimalExtensions
     {
         /// <summary>
         /// 判断 decimal 是否为零。

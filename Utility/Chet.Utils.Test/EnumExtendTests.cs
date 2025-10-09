@@ -35,7 +35,7 @@ namespace Chet.Utils.Tests
         [Fact]
         public void GetValues_Test()
         {
-            var values = EnumExtend.GetValues<TestEnum>();
+            var values = EnumExtensions.GetValues<TestEnum>();
             Assert.Contains(TestEnum.First, values);
             Assert.Contains(TestEnum.Second, values);
             Assert.Contains(TestEnum.Third, values);
@@ -44,7 +44,7 @@ namespace Chet.Utils.Tests
         [Fact]
         public void GetNames_Test()
         {
-            var names = EnumExtend.GetNames<TestEnum>();
+            var names = EnumExtensions.GetNames<TestEnum>();
             Assert.Contains("First", names);
             Assert.Contains("Second", names);
             Assert.Contains("Third", names);
@@ -98,7 +98,7 @@ namespace Chet.Utils.Tests
         [Fact]
         public void GetValueDescriptionDict_Test()
         {
-            var dict = EnumExtend.GetValueDescriptionDict<TestEnum>();
+            var dict = EnumExtensions.GetValueDescriptionDict<TestEnum>();
             Assert.Equal("第一个", dict[TestEnum.First]);
             Assert.Equal("无", dict[TestEnum.None]);
             Assert.Equal("Third", dict[TestEnum.Third]);
@@ -107,7 +107,7 @@ namespace Chet.Utils.Tests
         [Fact]
         public void GetNameDescriptionDict_Test()
         {
-            var dict = EnumExtend.GetNameDescriptionDict<TestEnum>();
+            var dict = EnumExtensions.GetNameDescriptionDict<TestEnum>();
             Assert.Equal("第一个", dict["First"]);
             Assert.Equal("无", dict["None"]);
             Assert.Equal("Third", dict["Third"]);
@@ -133,8 +133,8 @@ namespace Chet.Utils.Tests
         [Fact]
         public void GetUnderlyingType_Test()
         {
-            Assert.Equal(typeof(int), EnumExtend.GetUnderlyingType<TestEnum>());
-            Assert.Equal(typeof(int), EnumExtend.GetUnderlyingType<FlagEnum>());
+            Assert.Equal(typeof(int), EnumExtensions.GetUnderlyingType<TestEnum>());
+            Assert.Equal(typeof(int), EnumExtensions.GetUnderlyingType<FlagEnum>());
         }
     }
 }

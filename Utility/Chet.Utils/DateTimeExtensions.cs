@@ -1,11 +1,11 @@
 ﻿using System.Globalization;
 
-namespace Chet.Utils
+namespace Chet.Utils.DateTimeExtensions
 {
     /// <summary>
     /// DateTime 扩展方法类，提供常用的判断、转换、计算、格式化等功能。
     /// </summary>
-    public static class DateTimeExtend
+    public static class DateTimeExtensions
     {
         /// <summary>
         /// 判断 DateTime 是否为默认值（未初始化）。

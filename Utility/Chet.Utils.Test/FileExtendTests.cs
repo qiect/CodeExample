@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using Chet.Utils.FileExtensions;
 using System.Text;
 using Xunit;
 

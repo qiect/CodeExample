@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using Chet.Utils.DecimalExtensions;
+using Xunit;
 
 namespace Chet.Utils.Tests
 {

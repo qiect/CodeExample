@@ -1,11 +1,11 @@
 ﻿using System.Globalization;
 
-namespace Chet.Utils
+namespace Chet.Utils.DoubleExtensions
 {
     /// <summary>
     /// double 扩展方法类，提供常用的判断、转换、运算、格式化等功能。
     /// </summary>
-    public static class DoubleExtend
+    public static class DoubleExtensions
     {
         /// <summary>
         /// 判断 double 是否为零。

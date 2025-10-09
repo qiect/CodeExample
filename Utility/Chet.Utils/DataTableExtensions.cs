@@ -1,11 +1,11 @@
 ﻿using System.Data;
 
-namespace Chet.Utils
+namespace Chet.Utils.DataTableExtensions
 {
     /// <summary>
     /// DataTable 扩展方法类，提供常用的转换、查询、操作等功能。
     /// </summary>
-    public static class DataTableExtend
+    public static class DataTableExtensions
     {
         /// <summary>
         /// 判断 DataTable 是否为 null 或无行数据。

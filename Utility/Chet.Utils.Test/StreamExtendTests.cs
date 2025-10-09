@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Chet.Utils.StreamExtensions;
+using System.Text;
 using Xunit;
 
 namespace Chet.Utils.Tests

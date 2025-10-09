@@ -1,11 +1,11 @@
 ﻿using System.Collections.Concurrent;
 
-namespace Chet.Utils
+namespace Chet.Utils.EnumerableExtensions
 {
     /// <summary>
     /// IEnumerable/ICollection 扩展方法类，提供常用的判断、转换、操作、统计等功能。
     /// </summary>
-    public static class EnumerableExtend
+    public static class EnumerableExtensions
     {
         #region IEnumerable 扩展
 

@@ -1,6 +1,5 @@
-﻿using System;
+﻿using Chet.Utils.BoolExtensions;
 using Xunit;
-using Chet.Utils;
 
 namespace Chet.Utils.Tests
 {
