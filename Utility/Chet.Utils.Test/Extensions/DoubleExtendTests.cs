@@ -1,7 +1,7 @@
 ﻿using Chet.Utils.DoubleExtensions;
 using Xunit;
 
-namespace Chet.Utils.Tests
+namespace Chet.Utils.Tests.Extensions
 {
     public class DoubleExtendTests
     {

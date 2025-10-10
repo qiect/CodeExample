@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using Xunit;
 
-namespace Chet.Utils.Tests
+namespace Chet.Utils.Tests.Extensions
 {
     public class EnumExtendTests
     {

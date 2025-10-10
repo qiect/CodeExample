@@ -1,7 +1,7 @@
 ﻿using Chet.Utils.DecimalExtensions;
 using Xunit;
 
-namespace Chet.Utils.Tests
+namespace Chet.Utils.Tests.Extensions
 {
     public class DecimalExtendTests
     {

@@ -16,4 +16,8 @@
 		<ProjectReference Include="..\Chet.Utils\Chet.Utils.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Helpers\" />
+	</ItemGroup>
+
 </Project>
