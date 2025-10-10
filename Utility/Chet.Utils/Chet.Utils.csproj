@@ -10,7 +10,7 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>a c# utility library. C#工具包。常用扩展方法，包含bool、string、int、float、double、decimal、enum、DataTable、DateTime、File、Stream、File</Description>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<Product />
 		
 	</PropertyGroup>
